@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  app:
+    build: .
+    image: python_image
+    volumes:
+      - ./data:/home/thomas/data
+    stdin_open: true
+    tty: true
